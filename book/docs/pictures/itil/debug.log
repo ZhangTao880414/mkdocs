@@ -1,0 +1,19 @@
+[0515/122007:INFO:exception_record.cc(518)] [QB]Process ID: 19552 Type: 2
+[0515/122007:INFO:http_cache_transaction.cc(72)] IgnoreZeroCacheError: 0
+[0515/122210:INFO:exception_record.cc(518)] [QB]Process ID: 21652 Type: 2
+[0515/122213:WARNING:webmediaplayer_impl.cc(341)] Using MultibufferDataSource
+[0515/122255:ERROR:ffmpeg_demuxer.cc(1510)] media::FFmpegDemuxer::OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+[0515/143946:INFO:exception_record.cc(518)] [QB]Process ID: 9624 Type: 2
+[0515/144220:WARNING:webmediaplayer_impl.cc(341)] Using MultibufferDataSource
+[0515/144220:ERROR:ffmpeg_demuxer.cc(1510)] media::FFmpegDemuxer::OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+[0515/144220:WARNING:webmediaplayer_impl.cc(341)] Using MultibufferDataSource
+[0515/144305:ERROR:ffmpeg_demuxer.cc(1510)] media::FFmpegDemuxer::OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+[0515/160934:INFO:exception_record.cc(518)] [QB]Process ID: 27328 Type: 2
+[0515/164750:INFO:exception_record.cc(518)] [QB]Process ID: 27112 Type: 2
+[0515/165034:INFO:exception_record.cc(518)] [QB]Process ID: 18536 Type: 2
+[0516/100126:INFO:exception_record.cc(518)] [QB]Process ID: 27684 Type: 2
+[0516/154654:INFO:exception_record.cc(518)] [QB]Process ID: 24600 Type: 2
+[0516/154747:INFO:exception_record.cc(518)] [QB]Process ID: 30360 Type: 2
+[0520/001238:ERROR:ipc_channel_win.cc(213)] pipe error: 109
+[0520/001238:INFO:exception_record.cc(518)] [QB]Process ID: 43652 Type: 3
+[0520/001638:ERROR:browser_gpu_channel_host_factory.cc(119)] Failed to launch GPU process.

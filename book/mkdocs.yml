@@ -1,0 +1,475 @@
+site_name: 笔记
+site_description: 笔记
+site_author: 条子在洗澡
+
+#repo_name: 'null'
+#repo_url: 'unll'
+theme:
+  name: material
+  #name: readthedocs
+  highlightjs: true
+  palette:
+    primary: 'Blue Grey'
+    accent: 'Pink'
+  feature:
+    tabs: false
+  #font:
+    #text: 'Ubuntu'
+    #code: 'Ubuntu Mono'
+  language: 'zh'
+  shortcuts:
+        help: 191    # ?
+        next: 78     # n
+        previous: 80 # p
+        search: 83   # s
+
+extra:
+  social:
+    - type: github
+      link: https://github.com/ZhangTao880414
+  search:
+    language: 'jp'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+      #emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      #emoji_generator: !!python/name:pymdownx.emoji.to_png_sprite
+      #emoji_generator: !!python/name:pymdownx.emoji.to_svg_sprite
+      #emoji_generator: !!python/name:pymdownx.emoji.to_awesome
+      #emoji_generator: !!python/name:pymdownx.emoji.to_alt
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+extra_javascript:
+  - 'js/extra.js'
+  - 'js/baidu-tongji.js'
+  #- 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+  #- 'https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js'
+  #- 'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'
+  #- 'https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js'
+  #- 'https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js'
+  #- 'js/umlconvert.js'
+  - js/webfont.js
+  - js/snap.svg-min.js
+  - js/underscore-min.js
+  - js/sequence-diagram-min.js   
+  - js/uml-converter.js
+  - js/sequence-loader.js
+
+nav:
+    - Home: index.md
+    - Work Specification: work/workSpecfication.md
+    - Security Hardening: 
+        - 1. OS: securityHardening/os.md
+        - 2. Nginx: securityHardening/nginx.md
+        - 3. Tomcat: securityHardening/tomcat.md
+        - 4. MySQL: securityHardening/mysql.md
+    - Automation tool:
+        - 1.Ansible:
+            - 1. Introuce: ansible/ansible_index.md
+            - 2. Model: ansible/ansible_modle.md
+            - 3. Playbook: ansible/ansible_playbook_intrduce.md
+            - 4. Use: ansible/ansible_install_nginx.md
+    - Operation Safety:
+        - 1. 安全术语: operationSafety/1.安全术语.md
+        - 2. 渗透流程: operationSafety/2.渗透流程.md
+        - 3. HHTP: operationSafety/3.HTTP.md
+    - Centos Service Install: 
+        - 1. system:
+            - 1. Centos7 minimal安装图形界面: centos_service_install/Centos7-minimal安装图形界面.md
+            - 2. Centos7 RPM命令使用: centos_service_install/Centos7-RPM命令使用.md
+            - 3. Centos7 swap 使用: centos_service_install/Centos7-swap.md
+            - 4. Centos7 关闭selinux及Firewall: centos_service_install/Centos7-关闭selinuxFirewall.md
+            - 5. Centos7 配置hostname及hosts解析: centos_service_install/Centos7-配置hostname及hosts解析.md
+            - 6. Centos7 配置static网络: centos_service_install/Centos7-配置static网络.md
+            - 7. Centos7 配置免密登录: centos_service_install/Centos7-配置免密登录.md
+            - 8. Centos7 配置本地yum源: centos_service_install/Centos7-配置本地yum源.md
+            - 9. Centos7 配置阿里云yum源和epel源: centos_service_install/Centos7-配置阿里云yum源和epel源.md
+            - 10. CentOS7 python升级: centos_service_install/CentOS7-python升级.md
+        - 2. software:
+            - 1. Centos7 搭建DNS主备服务器: centos_service_install/Centos7-搭建DNS主备服务器.md
+            - 2. Centos7 DNS客户端配置: centos_service_install/Centos7-DNS客户端配置.md
+            - 3. Centos7 安装配置jenkins: centos_service_install/Centos7-安装配置jenkins.md
+            - 4. Centos7 搭建gitlab: centos_service_install/Centos7-搭建gitlab.md
+            - 5. Centos7 搭建iscsi存储服务器: centos_service_install/Centos7-搭建iscsi存储服务器.md
+            - 6. Centos7 搭建nfs存储服务器: centos_service_install/Centos7-搭建nfs存储服务器.md
+            - 7. CentOS7 jumpserver跳板机搭建: centos_service_install/CentOS7-jumpserver跳板机搭建.md
+            - 8. CentOS7 搭建git服务器: centos_service_install/CentOS7-搭建git服务器.md
+            - 9. Centos7 install Mkdocs: centos_service_install/Centos7-安装配置MKDOCS.md
+    - ITIL:
+        - 1. 概述: itil/1.ITIL概述.md
+        - 2. 服务战略: itil/2.ITIL服务战略.md
+        - 3. 服务设计: itil/3.ITIL服务设计.md
+        - 10. 总结: itil/总结.md
+    - Python: 
+        - 1. Tools Use: 
+            - virtualenv: 
+                - 1. virtualenv: python/tools/virtualenv.index.md
+                - 2. virtualenvwrapper: python/tools/virtualenvwrapper.index.md
+            - pip : 
+                - 1. pip repo: python/tools/pip.index.md
+        - 2. Lib Use: 
+            - 1. SQLAlchemy lib:  
+                - 1. Create table: python/lib/SQLAlchemy/1.创建表.md
+                - 2. Base CMD: python/lib/SQLAlchemy/2.基本操作.md
+                - 3. MySQL Roll Back: python/lib/SQLAlchemy/3.回滚.md
+                - 4. Statistical grouping: python/lib/SQLAlchemy/4.统计分组.md
+                - 5. Foregin key: python/lib/SQLAlchemy/5.外键.md
+                - 6. Define Rrelationship: python/lib/SQLAlchemy/6.关系定义.md
+            - 2. YAMLlib: 
+                - 1. Yaml roll: python/lib/yaml/1.yaml语法.md
+                - 2. Yaml Use: python/lib/yaml/2.yaml使用.md
+            - 3. sh lib: 
+                - 1. SH use: python/lib/sh/1.sh.md
+            - 4. excel lib: 
+                - 1. Xlrd_xlwt: python/lib/execel/1.xlrd_xlwt.md
+                - 2. Openpyxl: python/lib/execel/2.openpyxl.md
+            - 5. lock-unlock: 
+                - 1. Base64: python/lib/encryption_decryption/base64/1.base64使用.md
+                - 2. Lock-unlock execl table: python/lib/encryption_decryption/base64/2.案例.md
+            - 6. Email lib: 
+                - 1. SMTP: python/lib/email/smtp/lib_smtp.md
+                - 2. YaGMAIL: python/lib/email/smtp/lib_yagmail.md
+            - 7. wordcloud lib:
+                - 1. wordcloud: python/lib/wordcloud/1.wordcloud.md
+            - 8. yield lib:   python/lib/yield/1.yield.md 
+            - 9. Nosql:
+                - 1. Mongo: python/lib/nosql/mongo/mongo.index.md
+                - 2. Memcached: python/lib/nosql/memcached/memcached.index.md
+                - 3. Redis:
+                    - 1. Redis: python/lib/nosql/redis/redis.index.md
+                    - 2. Redis pipeline: python/lib/nosql/redis/redis.pipeline.md
+                    - 3. Redis transaction: python/lib/nosql/redis/redis.transaction.md
+                    - 4. Redis pub_sub: python/lib/nosql/redis/redis.pub_sub.md
+                    - 5. Redis sentinel: python/lib/nosql/redis/redis.sentinel.md
+            - 10. Data process lib: 
+                - 1. NumPy: 
+                    - 1. introduce: python/lib/numPy/1.index.md
+                - 2. Pandas: 
+                    - 1. introduce: python/lib/pandas/1.index.md   
+            - 11. UUID: python/lib/uuid/uuid.index.md
+            - 12. LRU: python/lib/LRU/LRU.index.md
+            - 13. Getpass: python/lib/getpass/getpass.index.md
+            - 14. OS: python/lib/os/os.index.md
+            - 15. SYS: python/lib/sys/sys.index.md
+            - 16. Psutil: python/lib/psutil/psutil.index.md
+        - 3. Base Use:
+            - 1. list: python/base/list.md
+            - 2. tuple: python/base/tuple.md
+            - 3. dict: python/base/dict.md
+            - 4. date: python/base/datetime.md
+        - 4. Sample: 
+            - 1. Remove dir all files: python/sample/remove_dir_files.md  
+            - 2. Dict insting: python/sample/dict_nesting.md  
+    - Flask:
+        - 1. Intruduce: python/flask/flask.index.md
+        - 2. Configuration: python/flask/flask.config.md
+        - 3. URL: python/flask/flask.url.md
+        - 4. Requist: python/flask/flask.methods.md
+        - 5. Model: python/flask/flask.jinja2.md
+    - Django:
+        - 1. URL Name: python/django/note/django.url_name.md
+        - 2. Rename URL: python/django/note/django.duplication_url_name.md
+        - 3. URL Reverse: python/django/url/django.reverse_url.md
+        - 4. Page Split: python/django/url/django.paginator.md
+        - 5. From: python/django/form/django.form.md
+        - 6. Empty From:  python/django/note/django.blank.md
+        - 7. Middleware: python/django/middleware/django.middleware.md
+        - 8. Django Deploy: linux/server/deploy_django/deploy_django.index.md
+    - Linux:
+        - 1. Tools: 
+            - 1. Elinks: tools/elinks/elinks.index.md
+            - 2. Linux terminal recovery: tools/script_scriptreplay/1.index.md
+            - 3. Xshell:
+                - 1. Xshell session export: tools/xshell/xshell.index.md
+                - 2. Xshell close voice: tools/xshell/xshell.silent.md
+            - 4. Download:
+                - 1. Axel: linux/tools/axel.index.md
+            - 5. NodePad:
+                - 1. NppFTP: tools/nodepad/nodepad.nppftp.md
+            - 6. Autom tools:
+                - 1. sshpass: tools/sshpass/sshpass.index.md
+                - 2. pssh: tools/pssh/pssh.index.md
+        - 2. Base:
+            - 1. System optimize: linux/tutorial/linux.optimization.md
+            - 2. Directory Explain: linux/tutorial/linux.path.md 
+            - 3. System start order: linux/tutorial/linux.sequence_start.md
+            - 4. Raid: 
+                - 1. Raid introduce: linux/raid/raid.index.md
+                - 2. Raid use: linux/raid/raid.card.md 
+        - 3. CMD:
+            - 1. CMD list: linux/tutorial/linux.commands.md
+        - 4. Service Install:
+            - 1. Harbor: linux/server/harbor/harbor.index.md
+            - 2. PPPOE: linux/server/pppoe/pppoe.index.md
+            - 3. Sersync: linux/server/sersync/sersync.md
+        - 5. Problem solve:
+            - 1. Inode use up: linux/problem/inode-use-up.md
+            - 2. SSH Close By Remote: linux/problem/ssh_close_by_remote.md
+    - Shell:
+ #       - 1. Shell CMD:
+        - 2. Script:
+            - 1. System Scan: linux/shell/system/linux.system_check.md
+            - 2. Network info: linux/shell/system/linux.network.md
+            - 3. Install MySQL: linux/shell/mysql/mysql.install.md
+    - Container:
+        - 1. Docker:
+            - 1. Docker install: container/docker/docker.index.md
+            - 2. Docker cmd: container/docker/docker.command.md 
+            - 3. Docker container: container/docker/docker.container.md 
+            - 4. Docker data volume: container/docker/docker.data_volume.md 
+            - 5. Docker network: container/docker/docker.container_network.md 
+            - 6. Dockerfile: container/docker/docker.lnmp.md 
+            - 7. Docker Harbor: container/docker/docker.harbor.md 
+            - 8. Docker ci_cd: container/docker/docker.ci_cd.md 
+        - 2. Kubernetes:
+            - 1. K8S introduce: container/k8s/k8s.index.md
+            - 2. K8S machine plan: container/k8s/k8s.machine.md
+            - 3. K8S etcd: container/k8s/k8s.etcd_info.md
+            - 4. K8S flannel: container/k8s/k8s.flannel_info.md
+            - 5. K8S master: container/k8s/k8s.master.md
+            - 6. K8S node: container/k8s/k8s.node.md
+            - 7. K8S new master: container/k8s/k8s.add_master.md
+            - 8. K8S slb_ha: container/k8s/k8s.slb_ha.md
+            - 9. K8S pod: container/k8s/k8s.pod.md
+            - 10. K8S controllers: container/k8s/k8s.controller.md
+            - 11. K8S coredns: container/k8s/k8s.coredns.md
+            - 12. K8S ingress: container/k8s/k8s.ingress.md
+            - 13. K8S rbac: container/k8s/k8s.rbac.md
+            - 14. K8S storage: container/k8s/k8s.storage.md
+            - 15. K8S statefulset: container/k8s/k8s.statefulset.md
+            - 16. K8S cases: container/k8s/k8s.cases.md        
+    - Tomcat:
+        - 1. Tomcat certificate: linux/server/certificate/tomcat.index.md
+    - Nginx:
+        - 1. Nginx introduce: nginx/nginx.index.md
+        - 2. Nginx configration: nginx/nginx.conf.md
+        - 3. Nginx virtual machine: nginx/nginx.virtual_hosts.md
+        - 4. Nginx logs: nginx/nginx.log.md
+        - 5. Nginx anti link: nginx/nginx.nti_theft_chain.md
+        - 6. Nginx normal config: nginx/nginx.other.md
+        - 7. Nginx optimization: nginx/nginx.optimization.md
+        - 8. Nginx hash: nginx/nginx.hash.md
+        - 9. Nginx location: nginx/nginx.location.md
+        - 10. Nginx rewrite: nginx/nginx.rewrite.md
+        - 11. Nginx slb: nginx/nginx.slb.md
+        - 12. Nginx http2: nginx/nginx.http2.md
+        - 13. Nginx password: nginx/nginx_password.md
+    - Nosql:
+        - 1. MonogoDB:
+            - 1. MonogoDB introduce: nosql/mongo/mongo.index.md
+            - 2. MonogoDB database: nosql/mongo/mongo.databases.md
+            - 3. MonogoDB collection: nosql/mongo/mongo.collection.md
+            - 4. MonogoDB document: nosql/mongo/mongo.doc.md
+            - 5. MonogoDB query: nosql/mongo/mongo.conditional_query.md
+            - 6. MonogoDB fuzzy qurry: nosql/mongo/mongo.fuzzy_enquiry.md
+            - 7. MonogoDB $type: nosql/mongo/mongo.type.md
+            - 8. MonogoDB ls: nosql/mongo/mongo.limit_skip.md
+            - 9. MonogoDB sort: nosql/mongo/mongo.sort.md
+            - 10. MonogoDB backup-recovery: nosql/mongo/mongo.backup_recovery.md
+            - 11. MonogoDB monitor: nosql/mongo/mongo.monitor.md 
+            - 12. MonogoDB replication: nosql/mongo/mongo.replication.md 
+            - 13. MonogoDB split replication: nosql/mongo/mongo.shard_info.md 
+            - 14. MonogoDB split rep use: nosql/mongo/mongo.shard_replicat.md
+        - 2. Redis:
+            - 1. Redis introduce: nosql/redis/redis.index.md
+            - 2. Redis install: nosql/redis/redis.install.md
+            - 3. Redis auth: nosql/redis/redis.auth.md
+            - 4. Redis key: nosql/redis/redis.k_v.md
+            - 5. Redis publish: nosql/redis/redis.publish.md
+            - 6. Redis jobs: nosql/redis/redis.arrairs.md
+            - 7. Redis storages: nosql/redis/redis.store.md
+            - 8. Redis backup-recovery: nosql/redis/redis.save.md
+            - 9. Redis sentinel_cluster: nosql/redis/redis.sentinel_cluster.md
+            - 10. Redis master-slave: nosql/redis/redis.master-slave.md
+            - 11. Redis sentinel: nosql/redis/redis.sentinel.md
+            - 12. Redis cluster: nosql/redis/redis.cluster.md  
+            - 13. Redis cache_policy: nosql/redis/redis.cache_policy.md
+            - 14. Redis breakdown: nosql/redis/redis.breakdown.md
+            - 15. Redis avalanche: nosql/redis/redis.avalanche.md
+        - 3. Memcached:
+            - 1. Memcached: nosql/memcached/memcached.index.md
+    - MySQL:
+        - 1. MySQL Base use:
+            - 1. MySQL introduce: mysql/mysql.index.md
+            - 2. MySQL install: mysql/mysql.info.md
+            - 3. MySQL link: mysql/mysql.conn.md
+            - 4. MySQL lib: mysql/mysql.database.md
+            - 5. MySQL table: mysql/mysql.table.md
+            - 6. SQL SELECT: mysql/mysql.select.md
+            - 7. SQL WHERE: mysql/mysql.where.md
+            - 8. SQL UPDATE: mysql/mysql.update.md
+            - 9. SQL DELETE: mysql/mysql.delete.md
+            - 10. SQL LIKE: mysql/mysql.like.md
+            - 11. SQL DISTINCT: mysql/mysql.distinct.md
+            - 12. SQL LIMIT: mysql/mysql.limit.md
+            - 13. SQL AND_OR: mysql/mysql.and_or.md
+            - 14. SQL ORDER: mysql/mysql.orderby.md
+            - 15. SQL INSERT: mysql/mysql.insert.md
+            - 16. SQL DESC: mysql/mysql.desc.md
+            - 17. SQL IN: mysql/mysql.in.md
+            - 18. SQL BETWEEN: mysql/mysql.between.md
+            - 19. SQL ALIAS: mysql/mysql.alias.md
+            - 20. SQL GRANT: mysql/mysql.grant.md
+            - 21. SQL ALTER: mysql/mysql.alter.md
+        - 2. MySQL Middle use:
+            - 1. SQL PK: mysql/mysql.pk.md
+            - 2. SQL INCREMENT: mysql/mysql.increment.md
+            - 3. SQL jobs: mysql/mysql.transaction.md
+            - 4. NULL: mysql/mysql.null.md
+            - 5. Regular: mysql/mysql.regexp.md
+            - 6. Multi Table Queries: mysql/mysql.multi_table_query.md
+        - 3. MySQL disaster recovery:
+            - 1. mysqldump parameter: mysql/mysql.mysqldump.md
+            - 2. mysqldump script: mysql/mysql.mysqldump_case.md
+            - 3. xtrabackup: linux/server/xtrabackup/xtrabackup.index.md
+            - 4. binlog backup data: mysql/mysql.restore_data.md
+        - 4. MySQL Master-Slave:
+            - 1. Master-Slave: mysql/mysql.master-slave.md
+            - 2. Master-Master: mysql/mysql.master-master.md
+        - 5. MySQL OTHER:
+            - 1. MySQL test: mysql/mysql.practice1.md
+            - 2. Config: mysql/mysql.mysqlcnf.md
+            - 3. Increment_offset: mysql/mysql.increment_offset.md
+            - 4. Delte table: mysql/mysql.delete_truncate_drop.md
+            - 5. Binlog introduce: mysql/mysql.binlog.md
+            - 6. Integrity_constraint: mysql/mysql.integrity_constraint.md
+            - 7. Table copy: mysql/mysql.copy_table.md
+            - 8. Storage_engine: mysql/mysql.storage_engine.md
+            - 9. User: mysql/mysql.user.md            
+            - 10. Jobs: mysql/mysql.affairs.md    
+    - Hadoop:  
+       - CDH:  
+           - 1. CDH Introduce: hadoop/CDH/cdh.index.md  
+           - 2. CDH Deploy: hadoop/CDH/cdh.deploy.md  
+           - 3. NameNode HA: hadoop/CDH/cdh.namenode_ha.md  
+       - HDFS:  
+           - 1. HDFS Introduce: hadoop/CDH/cdh.hdfs_info.md  
+           - 2. HDFS shell: hadoop/CDH/cdh.hdfs_shell.md  
+           - 3. secondary_namenode: hadoop/CDH/cdh.secondary_namenode.md  
+       - Hive:  
+           - 1. Hive Introduce: hadoop/CDH/cdh.hive.md  
+       - DStorage:
+           - Contrast: linux/distributed_storage/distributed_storage.info.md          
+    - Zookeeper:
+        - 1. Zookeeper install: zookeeper/zookeeper-cluster-install.md
+        - 2. Zookeeper use: zookeeper/zookeeper-use.md
+        - 3. Zookeeper kafka: zookeeper/zookeeper-install-kafka.md
+    - SVN:
+        - 1. Git: 
+            - 1. Git base: svn/git/git.index.md
+            - 2. Git roll back: svn/git/git.rollback.md
+            - 3. Git branch: svn/git/git.branch.md
+            - 4. Git laber: svn/git/git.label.md
+            - 5. Git manage branch: svn/git/git.standard.md
+            - 6. Git GUI: svn/git/git.gui.md
+        - 2. Gitlab :
+            - 1. Gitlab install: svn/gitlab/gitlab.install.md
+            - 2. Gitlab config: svn/gitlab/gitlab.cmd.md
+            - 3. Close user register: svn/gitlab/gitlab.close_register.md
+            - 4. Find root passwd: svn/gitlab/gitlab.set_root_pwd.md
+    - Mkdocs:
+        - 1. install:
+            - 1. Local buils: install/local.md
+            - 2. Deploy to GitHub Pages: install/github-pages.md
+            - 3. Deploy to HTTP Server: install/http-server.md
+        - 2. grammar:
+            - 1. 语法总览: syntax/main.md
+            - 2. 标题: syntax/headline.md
+            - 3. 段落: syntax/paragraph.md
+            - 4. 引用: syntax/quote.md
+            - 5. 表格: syntax/table.md
+            - 6. 代码:
+                - 6.1. 行内: syntax/code_inline.md
+                - 6.2. 区块: syntax/code_block.md
+                - 6.3. 高亮: syntax/code_highlight.md
+            - 7. 字体样式:
+                - 7.1. 斜体,粗体,粗斜体: syntax/font_stress.md
+                - 7.2. 上标,下标: syntax/font_updown.md
+                - 7.3. 下划线: syntax/font_underline.md
+                - 7.4. 横线: syntax/font_line.md
+                - 7.5. 下划线+横线: syntax/font_underline_line.md
+            - 8. 列表:
+                - 8.1. 无序列表: syntax/list_noseq.md
+                - 8.2. 有序列表: syntax/list_seq.md
+                - 8.3. 任务列表: syntax/list_task.md
+            - 9. 分割线: syntax/cutline.md
+            - 10. 链接:
+                - 10.1. 普通链接: syntax/link_normal.md
+                - 10.2. 自动链接: syntax/link_auto.md
+                - 10.3. 锚点提示: syntax/link_anchor.md
+            - 11. 图片:
+                - 11.1. 行内式: syntax/image_inline.md
+                - 11.2. 参考式: syntax/image_index.md
+            - 12. 转义: syntax/escape.md
+            - 13. 高亮:
+                - 13.1. 代码高亮: syntax/highlight_code.md
+                - 13.2. 背景高亮: syntax/highlight_background.md
+            - 14. 注解:
+                - 14.1. 介绍: syntax/note_main.md
+                - 14.2. 完整格式: syntax/note_full.md
+                - 14.3. 空标题: syntax/note_empty-title.md
+                - 14.4. 无标题: syntax/note_none-title.md
+                - 14.5. 无类型: syntax/note_none-type.md
+                - 14.6. 折叠: syntax/note_details.md
+                - 14.7. 11种颜色样式: syntax/note_style.md
+                - 14.8. 嵌套: syntax/note_nest.md
+            - 15. 脚注: syntax/footnote.md
+            - 16. 元信息: syntax/meta.md
+            - 17. 数学公式:
+                - 17.1. 介绍: syntax/math_main.md
+                - 17.2. 导入js: syntax/math_js.md
+                - 17.3. 用法: syntax/math_usage.md
+            - 18. emoji:
+                - 18.1. 介绍: syntax/emoji_main.md
+                - 18.2. 工作原理: syntax/emoji_principle.md
+                - 18.3. 最佳实践: syntax/emoji_usage.md
+            - 19. 特殊符号: syntax/symbol.md
+            - 20. 嵌套:
+                - 20.1. 介绍: syntax/nest_main.md
+                - 20.2. 注解-注解: syntax/nest_note_note.md
+                - 20.3. 列表-列表: syntax/nest_list_list.md
+                - 20.4. 引用-引用: syntax/nest_quote_quote.md
+                - 20.5. 注解-代码块: syntax/nest_note_code.md
+                - 20.6. 列表-代码块: syntax/nest_list_code.md
+                - 20.7. 引用-代码块: syntax/nest_quote_code.md
+                - 20.8. 黄色区块-代码: syntax/nest_yellow_code.md
+                - 20.9. 绿色区块-代码: syntax/nest_green_code.md
+                - 20.10. 红色区块-代码: syntax/nest_red_code.md
+                - 20.11. 绿接红区块-代码: syntax/nest_greenred_code.md
+                - 20.12. 注解-列表-引用: syntax/nest_note_list_quote.md
+                - 20.13. 列表-列表-引用: syntax/nest_list_list_quote.md
+                - 20.14. 引用-引用-代码: syntax/nest_quote_quote_code.md
+        - 3. Append:
+            - 1. 支持代码高亮的语言: appendix/pygments.md
+            - 2. emojione全名短名映射表: appendix/emoji_shortname.md
+            - 3. 添加百度统计: appendix/baidu_tongji.md
+            - 4. 配色: appendix/color.md
+            - 5. 模块介绍: appendix/module.md
+            - 6. mkdocs层级关系: appendix/level.md
+            - 7. 支持中文搜索: appendix/search.md
+            - 8. mkdocs.yml范例: appendix/yml.md
+    - Learning site: 
+        - 1. web: url/url.index.md
+
