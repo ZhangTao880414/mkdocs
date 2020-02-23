@@ -1,6 +1,7 @@
-site_name: 笔记
-site_description: 笔记
-site_author: 条子在洗澡
+site_name: Linux学习网
+site_description: Linux学习网
+site_author: 张涛
+copyright: '            蜀ICP备16001068号-2  Copyright © 2019 taotaolinux.com All Rights Reserved'
 
 #repo_name: 'null'
 #repo_url: 'unll'
@@ -129,6 +130,7 @@ nav:
                 - 2. virtualenvwrapper: python/tools/virtualenvwrapper.index.md
             - pip : 
                 - 1. pip repo: python/tools/pip.index.md
+            - upgrade : centos_service_install/CentOS7-python升级.md
         - 2. Lib Use: 
             - 1. SQLAlchemy lib:  
                 - 1. Create table: python/lib/SQLAlchemy/1.创建表.md
@@ -233,6 +235,118 @@ nav:
             - 1. System Scan: linux/shell/system/linux.system_check.md
             - 2. Network info: linux/shell/system/linux.network.md
             - 3. Install MySQL: linux/shell/mysql/mysql.install.md
+    - Shell Practice:
+        - 0. 1-10:
+            - 1. Test: shellPractices/1.md
+            - 2. Test: shellPractices/2.md
+            - 3. Test: shellPractices/3.md
+            - 4. Test: shellPractices/4.md
+            - 5. Test: shellPractices/5.md
+            - 6. Test: shellPractices/6.md
+            - 7. Test: shellPractices/7.md
+            - 8. Test: shellPractices/8.md
+            - 9. Test: shellPractices/9.md
+            - 10. Test: shellPractices/10.md
+        - 1. 11-20:
+            - 11. Test: shellPractices/11.md
+            - 12. Test: shellPractices/12.md
+            - 13. Test: shellPractices/13.md
+            - 14. Test: shellPractices/14.md
+            - 15. Test: shellPractices/15.md
+            - 16. Test: shellPractices/16.md
+            - 17. Test: shellPractices/17.md
+            - 18. Test: shellPractices/18.md
+            - 19. Test: shellPractices/19.md
+            - 20. Test: shellPractices/20.md
+        - 2. 21-30:
+            - 21. Test: shellPractices/21.md
+            - 22. Test: shellPractices/22.md
+            - 23. Test: shellPractices/23.md
+            - 24. Test: shellPractices/24.md
+            - 25. Test: shellPractices/25.md
+            - 26. Test: shellPractices/26.md
+            - 27. Test: shellPractices/27.md
+            - 28. Test: shellPractices/28.md
+            - 29. Test: shellPractices/29.md
+            - 30. Test: shellPractices/30.md
+        - 3. 31-40:
+            - 31. Test: shellPractices/31.md
+            - 32. Test: shellPractices/32.md
+            - 33. Test: shellPractices/33.md
+            - 34. Test: shellPractices/34.md
+            - 35. Test: shellPractices/35.md
+            - 36. Test: shellPractices/36.md
+            - 37. Test: shellPractices/37.md
+            - 38. Test: shellPractices/38.md
+            - 39. Test: shellPractices/39.md
+            - 40. Test: shellPractices/40.md
+        - 4. 41-50:
+            - 41. Test: shellPractices/41.md
+            - 42. Test: shellPractices/42.md
+            - 43. Test: shellPractices/43.md
+            - 44. Test: shellPractices/44.md
+            - 45. Test: shellPractices/45.md
+            - 46. Test: shellPractices/46.md
+            - 47. Test: shellPractices/47.md
+            - 48. Test: shellPractices/48.md
+            - 49. Test: shellPractices/49.md
+            - 50. Test: shellPractices/50.md
+        - 5. 51-60:
+            - 51. Test: shellPractices/51.md
+            - 52. Test: shellPractices/52.md
+            - 53. Test: shellPractices/53.md
+            - 54. Test: shellPractices/54.md
+            - 55. Test: shellPractices/55.md
+            - 56. Test: shellPractices/56.md
+            - 57. Test: shellPractices/57.md
+            - 58. Test: shellPractices/58.md
+            - 59. Test: shellPractices/59.md
+            - 60. Test: shellPractices/46.md
+        - 6. 61-70:
+            - 61. Test: shellPractices/61.md
+            - 62. Test: shellPractices/62.md
+            - 63. Test: shellPractices/63.md
+            - 64. Test: shellPractices/64.md
+            - 65. Test: shellPractices/65.md
+            - 66. Test: shellPractices/66.md
+            - 67. Test: shellPractices/67.md
+            - 68. Test: shellPractices/68.md
+            - 69. Test: shellPractices/69.md
+            - 70. Test: shellPractices/70.md
+        - 7. 71-80:
+            - 71. Test: shellPractices/71.md
+            - 72. Test: shellPractices/72.md
+            - 73. Test: shellPractices/73.md
+            - 74. Test: shellPractices/74.md
+            - 75. Test: shellPractices/75.md
+            - 76. Test: shellPractices/76.md
+            - 77. Test: shellPractices/77.md
+            - 78. Test: shellPractices/78.md
+            - 79. Test: shellPractices/79.md
+            - 80. Test: shellPractices/80.md
+        - 8. 81-90:
+            - 81. Test: shellPractices/81.md
+            - 82. Test: shellPractices/82.md
+            - 83. Test: shellPractices/83.md
+            - 84. Test: shellPractices/84.md
+            - 85. Test: shellPractices/85.md
+            - 86. Test: shellPractices/86.md
+            - 87. Test: shellPractices/87.md
+            - 88. Test: shellPractices/88.md
+            - 89. Test: shellPractices/89.md
+            - 90. Test: shellPractices/90.md
+        - 9. 91-100:
+            - 91. Test: shellPractices/91.md
+            - 92. Test: shellPractices/92.md
+            - 93. Test: shellPractices/93.md
+            - 94. Test: shellPractices/94.md
+            - 95. Test: shellPractices/95.md
+            - 96. Test: shellPractices/96.md
+            - 97. Test: shellPractices/97.md
+            - 98. Test: shellPractices/98.md
+            - 99. Test: shellPractices/99.md
+            - 100. Test: shellPractices/100.md
+        - 10. source: shellPractices/1.log.zip
     - Container:
         - 1. Docker:
             - 1. Docker install: container/docker/docker.index.md
@@ -266,7 +380,7 @@ nav:
         - 1. Nginx introduce: nginx/nginx.index.md
         - 2. Nginx configration: nginx/nginx.conf.md
         - 3. Nginx virtual machine: nginx/nginx.virtual_hosts.md
-        - 4. Nginx logs: nginx/nginx.log.md
+        - 4. Nginx 7ogs: nginx/nginx.log.md
         - 5. Nginx anti link: nginx/nginx.nti_theft_chain.md
         - 6. Nginx normal config: nginx/nginx.other.md
         - 7. Nginx optimization: nginx/nginx.optimization.md
@@ -276,9 +390,72 @@ nav:
         - 11. Nginx slb: nginx/nginx.slb.md
         - 12. Nginx http2: nginx/nginx.http2.md
         - 13. Nginx password: nginx/nginx_password.md
+    - Nginx New:
+        - 1. 学习大纲: nginxNew/1.md
+        - 2. 第二章:
+            - 1. 配置源: nginxNew/2z/nginx.repo
+        - 3. 第三章:
+            - 1. events: nginxNew/3z/events.md
+            - 2. global: nginxNew/3z/global.md
+            - 3. http: nginxNew/3z/http.md
+            - 4. server: nginxNew/3z/server.md
+        - 4. 第四章:
+            - 1. event: nginxNew/4z/event.md
+            - 2. IO: nginxNew/4z/IO.md
+            - 3. jg: nginxNew/4z/jg.md
+            - 4. module: nginxNew/4z/module.md
+            - 5. request_process: nginxNew/4z/request_process.md
+        - 5. access:
+            - 1. auth: nginxNew/access/auth.md
+            - 2. deny_allow: nginxNew/access/deny_allow.md
+            - 3. document_uri: nginxNew/access/document_uri.md
+            - 4. limit: nginxNew/access/limit.md
+            - 5. location: nginxNew/access/location.md
+            - 6. referer: nginxNew/access/referer.md
+            - 7. request_uri: nginxNew/access/request_uri.md
+            - 8. user_agent: nginxNew/access/user_agent.md
+        - 6. http:
+            - 1. version: nginxNew/http/version.md
+            - 2. http: nginxNew/http/http.md
+        - 7. java:
+            - 1. nginx_tomcat: nginxNew/java/nginx_tomcat.md
+        - 8. lnmp:
+            - 1. nginx_php: nginxNew/lnmp/nginx_php.md
+        - 9. location:
+            - 1. priority: nginxNew/location/priority.md
+            - 2. ruler: nginxNew/location/ruler.md
+        - 10. log:
+            - 1. acclog: nginxNew/log/acclog.md
+            - 2. error: nginxNew/log/error.md
+            - 3. filter: nginxNew/log/filter.md
+            - 4. format: nginxNew/log/format.md
+            - 5. rotate: nginxNew/log/rotate.md
+        - 11. mon:
+            - 1. : nginxNew/mon/stat.md
+        - 12. optimize:
+            - 1. linux_kernel: nginxNew/optimize/linux_kernel.md
+            - 2. nginx_opt: nginxNew/optimize/nginx_opt.md
+        - 13. proxy:
+            - 1. bu_ca: nginxNew/proxy/bu_ca.md
+            - 2. f_proxy: nginxNew/proxy/f_proxy.md
+            - 3. z_proxy: nginxNew/proxy/z_proxy.md
+            - 4. pic: nginxNew/proxy/pic.md
+            - 5. lb: nginxNew/proxy/lb.md
+        - 14. rewrite:
+            - 1. variable: nginxNew/rewrite/variable.md
+            - 2. if: nginxNew/rewrite/if.md
+            - 3. break: nginxNew/rewrite/break.md
+            - 4. return: nginxNew/rewrite/return.md
+            - 5. rewrite_ruler: nginxNew/rewrite/rewrite_ruler.md
+            - 6. example: nginxNew/rewrite/example.md   
+        - 15. ssl:
+            - 1. ssl: nginxNew/ssl/ssl.md
+            - 2. ca: nginxNew/ssl/ca.md
+            - 3. key: nginxNew/ssl/key.md
+            - 4. nginx: nginxNew/ssl/nginx.md
     - Nosql:
-        - 1. MonogoDB:
-            - 1. MonogoDB introduce: nosql/mongo/mongo.index.md
+        - 1. Monogo8B:
+            - 1. Mono8oDB introduce: nosql/mongo/mongo.index.md
             - 2. MonogoDB database: nosql/mongo/mongo.databases.md
             - 3. MonogoDB collection: nosql/mongo/mongo.collection.md
             - 4. MonogoDB document: nosql/mongo/mongo.doc.md
@@ -289,7 +466,7 @@ nav:
             - 9. MonogoDB sort: nosql/mongo/mongo.sort.md
             - 10. MonogoDB backup-recovery: nosql/mongo/mongo.backup_recovery.md
             - 11. MonogoDB monitor: nosql/mongo/mongo.monitor.md 
-            - 12. MonogoDB replication: nosql/mongo/mongo.replication.md 
+            - 12. Mon9goDB replication: nosql/mongo/mongo.replication.md 
             - 13. MonogoDB split replication: nosql/mongo/mongo.shard_info.md 
             - 14. MonogoDB split rep use: nosql/mongo/mongo.shard_replicat.md
         - 2. Redis:

@@ -13,6 +13,7 @@ python --version
 
 wget https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz
 tar -zxvf Python-2.7.12.tgz
+
 #编译
 yum install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc  libffi-devel
 cd Python-2.7.12
@@ -45,5 +46,17 @@ wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 pip install --upgrade pip
 
+```   
 
-```
+??? note "python3安装"
+
+    ```python   
+    python3 方式和2相同只是安装包不同。   
+    python3下载链接： https://www.python.org/ftp/python/3.6.9/Python-3.6.9.tgz   
+    pip3 install:
+    wget --no-check-certificate https://pypi.python.org/packages/source/s/setuptools/setuptools-19.6.tar.gz   
+    tar -zxvf setuptools-19.6.tar.gz 
+    cd setuptools-19.6   
+    python3 setup.py build   
+    python3 setup.py install   
+    ```
