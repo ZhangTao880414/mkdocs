@@ -2,7 +2,7 @@ site_name: Linux学习网
 site_description: Linux学习网
 site_author: 张涛
 copyright: '            蜀ICP备16001068号-2  Copyright © 2019 taotaolinux.com All Rights Reserved'
-
+repo_url: https://github.com/ZhangTao880414/mkdocs
 #repo_name: 'null'
 #repo_url: 'unll'
 theme:
